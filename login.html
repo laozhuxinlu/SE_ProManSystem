@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>软件企业项目过程管理系统</title>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/registered.js"></script>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+  background-image: url(images/login_background.jpg);
+}
+-->
+</style>
+<link href="css/css.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div style="font-size: 60px; color: red;margin-top: 30px;" align="center">软件企业项目过程管理系统</div>
+<table border="1" align="center" cellpadding="0" cellspacing="0" class="right-table03">
+  <tr style="background: white; opacity: 0.8;border-radius:10%;">
+
+    <td>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="login-text02">用户类型：<br /></td>
+        <td >
+        <select id="selectPid" class="login_button" onchange="gradeChange()">
+          <option value="level0" selected = "selected">请选择用户类型</option>
+          <option value="1">公司高层</option>
+          <option value="2">项目经理</option>
+          <option value="3">需求分析师</option>
+          <option value="4">系统架构师</option>
+          <option value="5">系统分析师</option>
+          <option value="6">程序员</option>
+          <option value="7">网页设计师</option>
+          <option value="8">测试人员</option>
+        </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="login-text02">用户名：<br /></td>
+        <td ><input id = "useN" name="textfield" type="text" class="login_box"/></td>
+      </tr>
+
+      <tr>
+        <td class="login-text02">密码：<br /></td>
+        <td><input id="passW" name="textfield2" type="password" class="login_box"/></td>
+      </tr>
+
+      <tr align="center">
+        <td colspan="2">
+          <input name="login" type="button" value="登陆" class="right-button" onClick="login()" />
+
+        </td>
+      </tr>
+
+    </table></td>
+
+  </tr>
+</table>
+
+</body>
+
+</html>
